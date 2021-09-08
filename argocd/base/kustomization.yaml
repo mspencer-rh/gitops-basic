@@ -6,3 +6,5 @@ bases:
 - instance/rbac.yaml
 - instance/argo-crd.yaml
 - operator/gitops-operator-subscription.yaml
+- instance/application-project.yaml
+- instance/application-set.yaml
