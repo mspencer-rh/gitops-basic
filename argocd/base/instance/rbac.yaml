@@ -69,6 +69,12 @@ rules:
       - "apps.3scale.net"
     resources:
       - apimanagers
+  - verbs:
+      - '*'
+    apiGroups:
+      - "keycloak.org"
+    resources:
+      - keycloaks
 ---
 kind: ClusterRoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
