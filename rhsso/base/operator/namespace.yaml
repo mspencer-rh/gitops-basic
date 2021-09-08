@@ -3,5 +3,5 @@ kind: Namespace
 metadata:
   annotations:
     openshift.io/description: Operator namespace for SSO operator
-    openshift.io/display-name:  openshift-SSO
-  name: openshift-sso
+    openshift.io/display-name:  keycloak
+  name: keycloak
