@@ -3,6 +3,6 @@ kind: Kustomization
 
 bases:
 - operator/namespace.yaml
-- operator/gitops-operator-subscription.yaml
 - instance/rbac.yaml
 - instance/argo-crd.yaml
+- operator/gitops-operator-subscription.yaml

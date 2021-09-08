@@ -1,0 +1,32 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: cluster-base
+  namespace: openshift-gitops
+  labels:
+    app.kubernetes.io/instance: openshift-gitops
+spec:
+  generators:
+  - git:
+      repoURL: https://github.com/mspencer-rh/gitops-basic.git
+      revision: HEAD
+      directories:
+      - path: '*'
+  template:
+    metadata:
+      name: 'base'
+    spec:
+      project: cluster-base
+      syncPolicy:
+        automated: {}
+      source:
+        repoURL: https://github.com/mspencer-rh/gitops-basic.git
+        targetRevision: HEAD
+        path: '{{path}}'
+      destination:
+        server: https://kubernetes.default.svc
+      ignoreDifferences:
+      - group: integreatly.org
+        kind: GrafanaDataSource
+        jsonPointers:
+        - /spec/datasources/0/secureJsonData/httpHeaderValue1
