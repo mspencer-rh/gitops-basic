@@ -7,5 +7,5 @@ spec:
   system:
     fileStorage:
       persistentVolumeClaim:
-        storageClassName: 'aws-efs'
+        storageClassName: 'aws-ebs'
   wildcardDomain: apps.gitops.stp-lab.org
