@@ -4,4 +4,8 @@ metadata:
   name: 3scale-apimanager
   namespace: openshift-3scale
 spec:
+  system:
+    fileStorage:
+      persistentVolumeClaim:
+        storageClassName: 'aws-ebs'
   wildcardDomain: apps.gitops.stp-lab.org
