@@ -8,4 +8,4 @@ metadata:
 spec:
   instances: 1
   externalAccess:
-    enabled: False
+    enabled: True
