@@ -14,7 +14,7 @@ spec:
       - path: '*'
   template:
     metadata:
-      name: 'base'
+      name: '{{path.basename}}'
     spec:
       project: cluster-base
       syncPolicy:
