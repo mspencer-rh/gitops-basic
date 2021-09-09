@@ -6,3 +6,4 @@ bases:
 - operator/operatorgroup.yaml
 - operator/subscription.yaml
 - instance/keycloak.yaml
+- instance/test-realm.yaml
