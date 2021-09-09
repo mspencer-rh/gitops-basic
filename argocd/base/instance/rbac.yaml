@@ -75,6 +75,7 @@ rules:
       - "keycloak.org"
     resources:
       - keycloaks
+      - keycloakrealms
 ---
 kind: ClusterRoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
