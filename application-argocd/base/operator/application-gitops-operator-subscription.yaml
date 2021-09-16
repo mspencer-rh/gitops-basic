@@ -1,0 +1,14 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: Subscription
+metadata:
+  name: application-openshift-gitops-operator
+  namespace: application-argocd
+  labels:
+    app.kubernetes.io/instance: application-argocd
+spec:
+  channel: stable
+  installPlanApproval: Automatic
+  name: openshift-gitops-operator
+  source: redhat-operators
+  sourceNamespace: openshift-marketplace
+  startingCSV: openshift-gitops-operator.v1.1.0
