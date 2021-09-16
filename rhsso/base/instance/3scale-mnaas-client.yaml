@@ -12,3 +12,4 @@ spec:
   client:
     clientId: 3scale-mnaas-client
     secret: client-secret
+    serviceAccountsEnabled: True
