@@ -1,16 +1,16 @@
 apiVersion: keycloak.org/v1alpha1
 kind: KeycloakRealm
 metadata:
-  name: 3scale-mnaas-dev
+  name: 3scale-mnaas-dev-realm
   namespace: keycloak
   labels:
     app: 3scale-mnaas-dev
 spec:
   realm:
-    id: "3scale-mnaas-dev"
-    realm: "3scale-mnaas-dev"
+    id: "3scale-mnaas-dev-realm"
+    realm: "3scale-mnaas-dev-realm"
     enabled: True
-    displayName: "3scale-mnaas-dev"
+    displayName: "3scale-mnaas-dev-realm"
   instanceSelector:
     matchLabels:
       app: sso
