@@ -3,5 +3,4 @@ kind: Kustomization
 
 bases:
 - operator/namespace.yaml
-- operator/application-gitops-operator-subscription.yaml
 - instance/applicationargo-crd.yaml
