@@ -6,9 +6,9 @@ metadata:
   labels:
     app: sso
 spec:
-  # realmSelector:
-    #  matchLabels:
-      # app: <matching labels for KeycloakRealm custom resource>
+  realmSelector:
+     matchLabels:
+      app: 3scale-mnaas-dev
   client:
     clientId: 3scale-mnaas
     secret: client-secret
