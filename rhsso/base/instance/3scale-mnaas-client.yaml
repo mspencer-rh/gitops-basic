@@ -1,0 +1,13 @@
+apiVersion: keycloak.org/v1alpha1
+kind: KeycloakClient
+metadata:
+  name: 3scale-mnaas
+  labels:
+    app: sso
+spec:
+  # realmSelector:
+    #  matchLabels:
+      # app: <matching labels for KeycloakRealm custom resource>
+  client:
+    clientId: 3scale-mnaas
+    secret: client-secret
