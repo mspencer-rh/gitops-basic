@@ -13,3 +13,4 @@ spec:
     clientId: 3scale-mnaas-client
     secret: client-secret
     serviceAccountsEnabled: True
+    protocol: openid-connect
