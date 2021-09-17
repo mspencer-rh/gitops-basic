@@ -4,3 +4,4 @@ kind: Kustomization
 bases:
 - localuser-provider/localuser-secret.yaml
 - localuser-provider/localuser-oauth.yaml
+- localuser-provider/localuser-rbac.yaml
