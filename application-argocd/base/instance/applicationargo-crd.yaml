@@ -3843,6 +3843,7 @@ apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:
   name: argocd-server-network-policy
+  namespace: application-argocd
 spec:
   ingress:
   - {}
