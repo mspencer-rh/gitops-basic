@@ -3,6 +3,8 @@ kind: AppProject
 metadata:
   name: application-project
   namespace: application-argocd
+  annotations:
+    argocd.argoproj.io/compare-options: IgnoreExtraneous
   labels:
     app.kubernetes.io/instance: application-argocd
 spec:
