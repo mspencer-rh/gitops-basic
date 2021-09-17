@@ -3,4 +3,5 @@ kind: Kustomization
 
 bases:
 - operator/namespace.yaml
+- instance/rbac.yaml
 - instance/applicationargo-crd.yaml
