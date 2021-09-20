@@ -35,15 +35,15 @@ spec:
         - name: APICAST_CONFIGURATION_LOADER
           value: boot
         - name: APICAST_PATH_ROUTING
-          value: False
+          value: "False"
         - name: APICAST_RESPONSE_CODES
-          value: False
+          value: "False"
         - name: APICAST_CONFIGURATION_CACHE
           value: ""
         - name: APICAST_MANAGEMENT_API
           value: status
         - name: OPENSSL_VERIFY
-          value: False
+          value: "False"
         image: "registry.redhat.io/3scale-amp2/apicast-gateway-rhel8:3scale2.10"
         imagePullPolicy: IfNotPresent
         name: apicast
