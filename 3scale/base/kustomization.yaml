@@ -7,3 +7,4 @@ bases:
 - operator/subscription.yaml
 - instance/apimanager.yaml
 - instance/apicast.yaml
+- instance/apicast-service.yaml
