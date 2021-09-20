@@ -1,7 +1,7 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: apicast
+  name: apicast-svc
   namespace: openshift-3scale
   labels:
     app: 3scale-api-management
