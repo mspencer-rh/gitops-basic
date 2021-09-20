@@ -1,4 +1,4 @@
-apiVersion: v1
+apiVersion: apps.openshift.io/v1
 kind: DeploymentConfig
 metadata:
   name: apicast
@@ -78,27 +78,3 @@ spec:
               memory: 64Mi
   triggers:
   - type: ConfigChange
----
-kind: Service
-apiVersion: v1
-metadata:
-  name: apicast
-  namespace: openshift-3scale
-  labels:
-    app: 3scale-api-management
-spec:
-  ports:
-    - name: gateway
-      protocol: TCP
-      port: 8080
-      targetPort: 8080
-    - name: management
-      protocol: TCP
-      port: 8090
-      targetPort: 8090
-    - name: https
-      protocol: TCP
-      port: 8443
-      targetPort: 8443
-  selector:
-    deploymentconfig: apicast
