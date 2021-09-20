@@ -28,18 +28,12 @@ spec:
           value: 
         - name: THREESCALE_DEPLOYMENT_ENV
           value: production
-        - name: RESOLVER
-          value: ""
-        - name: APICAST_SERVICES_LIST
-          value: ""
         - name: APICAST_CONFIGURATION_LOADER
           value: boot
         - name: APICAST_PATH_ROUTING
           value: "False"
         - name: APICAST_RESPONSE_CODES
           value: "False"
-        - name: APICAST_CONFIGURATION_CACHE
-          value: ""
         - name: APICAST_MANAGEMENT_API
           value: status
         - name: OPENSSL_VERIFY
