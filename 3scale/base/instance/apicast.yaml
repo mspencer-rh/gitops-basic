@@ -100,4 +100,4 @@ spec:
       port: 8443
       targetPort: 8443
   selector:
-    deploymentconfig:
+    deploymentconfig: apicast
