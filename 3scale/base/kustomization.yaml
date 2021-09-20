@@ -6,3 +6,4 @@ bases:
 - operator/operatorgroup.yaml
 - operator/subscription.yaml
 - instance/apimanager.yaml
+- instance/apicast-production.yaml
