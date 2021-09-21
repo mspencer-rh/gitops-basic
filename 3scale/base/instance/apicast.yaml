@@ -30,7 +30,7 @@ spec:
         - name: THREESCALE_DEPLOYMENT_ENV
           value: production
         - name: APICAST_CONFIGURATION_LOADER
-          value: boot
+          value: lazy
         - name: APICAST_PATH_ROUTING
           value: "False"
         - name: APICAST_RESPONSE_CODES
