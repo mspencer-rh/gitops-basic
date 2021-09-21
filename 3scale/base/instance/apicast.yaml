@@ -19,14 +19,14 @@ spec:
     spec:
       containers:
       - env:
-        - name: THREESCALE_PORTAL_ENDPOINT
-          value: abc-123
+        # - name: THREESCALE_PORTAL_ENDPOINT
+          # value: abc-123
           # valueFrom:
             # secretKeyRef:
               # name: apicast-configuration-url-secret
               # key: password
-        - name: THREESCALE_CONFIG_FILE
-          value: 
+        # - name: THREESCALE_CONFIG_FILE
+          # value: 
         - name: THREESCALE_DEPLOYMENT_ENV
           value: production
         - name: APICAST_CONFIGURATION_LOADER
