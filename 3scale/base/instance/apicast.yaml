@@ -20,10 +20,11 @@ spec:
       containers:
       - env:
         - name: THREESCALE_PORTAL_ENDPOINT
-          valueFrom:
-            secretKeyRef:
-              name: apicast-configuration-url-secret
-              key: password
+          value: abc-123
+          # valueFrom:
+            # secretKeyRef:
+              # name: apicast-configuration-url-secret
+              # key: password
         - name: THREESCALE_CONFIG_FILE
           value: 
         - name: THREESCALE_DEPLOYMENT_ENV
@@ -82,3 +83,27 @@ spec:
         terminationMessagePolicy: File
   triggers:
   - type: ConfigChange
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: apicast-svc
+  namespace: openshift-3scale
+  labels:
+    app: 3scale-api-management
+spec:
+  ports:
+    - name: gateway
+      protocol: TCP
+      port: 8080
+      targetPort: 8080
+    - name: management
+      protocol: TCP
+      port: 8090
+      targetPort: 8090
+    - name: https
+      protocol: TCP
+      port: 8443
+      targetPort: 8443
+  selector:
+    deploymentconfig: apicast
