@@ -46,8 +46,8 @@ spec:
             path: /status/live
             port: 8090
             scheme: HTTP
-          initialDelaySeconds: 10
-          timeoutSeconds: 1
+          initialDelaySeconds: 30
+          timeoutSeconds: 3
           failureThreshold: 3
           periodSeconds: 10
           successThreshold: 1
@@ -56,8 +56,8 @@ spec:
             path: /status/ready
             port: 8090
             scheme: HTTP
-          initialDelaySeconds: 15
-          timeoutSeconds: 1
+          initialDelaySeconds: 60
+          timeoutSeconds: 3
           failureThreshold: 3
           periodSeconds: 10
           successThreshold: 1
