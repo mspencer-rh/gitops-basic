@@ -44,7 +44,7 @@ spec:
         livenessProbe:
           httpGet:
             path: /status/live
-            port: management
+            port: 8090
             scheme: HTTP
           initialDelaySeconds: 10
           timeoutSeconds: 1
@@ -54,7 +54,7 @@ spec:
         readinessProbe:
           httpGet:
             path: /status/ready
-            port: management
+            port: 8090
             scheme: HTTP
           initialDelaySeconds: 15
           timeoutSeconds: 1
