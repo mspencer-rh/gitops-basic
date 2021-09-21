@@ -7,3 +7,5 @@ bases:
 - operator/subscription.yaml
 - instance/apimanager.yaml
 - instance/apicast.yaml
+- instance/zync-cf.yaml
+- instance/zync-rbac.yaml
