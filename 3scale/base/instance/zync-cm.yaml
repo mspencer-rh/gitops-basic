@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   labels:
-    app: ${APP_LABEL}
+    app: 3scale-api-management
     threescale_component: system
   name: system
   namespace: openshift-3scale
