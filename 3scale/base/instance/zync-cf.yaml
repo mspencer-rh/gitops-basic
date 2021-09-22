@@ -33,3 +33,4 @@ metadata:
     app: ${APP_LABEL}
     threescale_component: system
   name: system
+  namespace: openshift-3scale
