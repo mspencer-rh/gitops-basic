@@ -14,6 +14,7 @@ kind: ServiceAccount
 metadata:
   name: zync-que-sa
   namespace: openshift-3scale
+automountServiceAccountToken: false
 imagePullSecrets:
 - name: threescale-registry-auth
 ---
