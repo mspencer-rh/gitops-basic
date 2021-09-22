@@ -9,3 +9,4 @@ bases:
 - instance/apicast.yaml
 - instance/zync-cf.yaml
 - instance/zync-rbac.yaml
+- instance/zync.yaml
