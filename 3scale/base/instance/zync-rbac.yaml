@@ -17,3 +17,4 @@ roleRef:
   name: zync-que-role
 subjects:
 - kind: ServiceAccount
+  name: zync-que-sa
