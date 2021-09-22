@@ -9,6 +9,7 @@ metadata:
     app: 3scale-api-management
     threescale_component: zync
   name: zync
+  namespace: openshift-3scale
 spec:
   replicas: 1
   selector:
