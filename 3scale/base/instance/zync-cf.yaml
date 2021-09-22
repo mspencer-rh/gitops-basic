@@ -1,4 +1,11 @@
 apiVersion: v1
+kind: ConfigMap
+metadata:
+  labels:
+    app: ${APP_LABEL}
+    threescale_component: system
+  name: system
+  namespace: openshift-3scale
 data:
   rolling_updates.yml: |
     production: {}
@@ -26,11 +33,3 @@ data:
       send_timeout: 5
       receive_timeout: 10
       root_url:
-kind: ConfigMap
-metadata:
-  creationTimestamp: null
-  labels:
-    app: ${APP_LABEL}
-    threescale_component: system
-  name: system
-  namespace: openshift-3scale
