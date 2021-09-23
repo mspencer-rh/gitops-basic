@@ -10,3 +10,4 @@ bases:
 - instance/zync-cm.yaml
 - instance/zync-rbac.yaml
 - instance/zync.yaml
+- instance/zync-que.yaml
