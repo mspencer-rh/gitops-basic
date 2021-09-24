@@ -8,7 +8,7 @@ spec:
     username: "3scale-user"
     firstName: "3scale"
     lastName: "User"
-    email: "user@example.com"
+    email: "user1@example.com"
     enabled: True
     emailVerified: False
     realmRoles:
