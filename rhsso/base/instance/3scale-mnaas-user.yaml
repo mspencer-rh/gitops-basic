@@ -10,7 +10,7 @@ spec:
     lastName: "User"
     email: "user@example.com"
     enabled: True
-    emailVerified: True
+    emailVerified: False
     realmRoles:
       - "offline_access"
   realmSelector:
