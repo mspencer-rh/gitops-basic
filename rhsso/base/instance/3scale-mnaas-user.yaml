@@ -1,0 +1,22 @@
+apiVersion: keycloak.org/v1alpha1
+kind: KeycloakUser
+metadata:
+  name: 3scale-user
+  namespace: keycloak
+spec:
+  user:
+    username: "3scale-user"
+    firstName: "3scale"
+    lastName: "User"
+    email: "user@example.com"
+    enabled: True
+    emailVerified: True
+    credentials:
+      - type: password
+        temporary: False
+        value: test
+    realmRoles:
+      - "offline_access"
+  realmSelector:
+    matchLabels:
+      app: 3scale-mnaas-dev
