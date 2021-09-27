@@ -6,7 +6,3 @@ bases:
 - operator/operatorgroup.yaml
 - operator/subscription.yaml
 - instance/keycloak.yaml
-- instance/3scale-mnaas-dev-realm.yaml
-- instance/3scale-mnaas-client.yaml
-- instance/generic-user.yaml
-- instance/3scale-mnaas-user.yaml
